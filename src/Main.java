@@ -83,5 +83,28 @@ public class Main {
         for (int i = 0; i < outputArray3.length; i++) {
             System.out.print(outputArray3[i] + (i < outputArray3.length - 1 ? ", " : ""));
         }
+
+        // Задача 4
+
+        int[] inputArray4 = {1500, 200, -50, 3000, 100};
+        boolean[] outputArray4 = new boolean[1];
+        outputArray4[0] = true;
+
+        for (int balance : inputArray4) {
+            if (balance < 0) {
+                outputArray4[0] = false;
+                break;
+            }
+        }
+
+        System.out.print("InputArray4 (Остатки на счете): ");
+        for (int i = 0; i < inputArray4.length; i++) {
+            System.out.print(inputArray4[i] + (i < inputArray4.length - 1 ? ", " : ""));
+        }
+
+        System.out.println();
+
+        System.out.print("OutputArray4 (Всегда положительный?): ");
+        System.out.println(outputArray4[0]);
     }
 }
