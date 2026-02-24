@@ -106,5 +106,28 @@ public class Main {
 
         System.out.print("OutputArray4 (Всегда положительный?): ");
         System.out.println(outputArray4[0]);
+
+        // Задача 5
+
+        int[] inputArray5 = {150000, -20000, 45000, 0, 120000};
+        int[] outputArray5 = new int[1];
+        int count = 0;
+
+        for (int profit : inputArray5) {
+            if (profit > 0) {
+                count++;
+            }
+        }
+        outputArray5[0] = count;
+
+        System.out.print("InputArray5 (Прибыль по месяцам): ");
+        for (int i = 0; i < inputArray5.length; i++) {
+            System.out.print(inputArray5[i] + (i < inputArray5.length - 1 ? ", " : ""));
+        }
+
+        System.out.println();
+
+        System.out.print("OutputArray5 (Количество рентабельных месяцев): ");
+        System.out.println(outputArray5[0]);
     }
 }
