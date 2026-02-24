@@ -39,5 +39,26 @@ public class Main {
         for (int i = 0; i < outputArray1.length; i++) {
             System.out.print(outputArray1[i] + (i < outputArray1.length - 1 ? " | " : ""));
         }
+
+        // Задача 2
+        int[] inputArray2 = {50000, 75000, 110000, 45000, 92000};
+        double[] outputArray2 = new double[inputArray2.length];
+        for (int i = 0; i < inputArray2.length; i++) {
+            outputArray2[i] = inputArray2[i] * 0.13;
+        }
+
+        System.out.println();
+
+        System.out.print("InputArray2: ");
+        for (int i = 0; i < inputArray2.length; i++) {
+            System.out.print(inputArray2[i] + (i < inputArray2.length - 1 ? ", " : ""));
+        }
+
+        System.out.println();
+
+        System.out.print("OutputArray2 (Налог 13%): ");
+        for (int i = 0; i < outputArray2.length; i++) {
+            System.out.print(outputArray2[i] + (i < outputArray2.length - 1 ? ", " : ""));
+        }
     }
 }
