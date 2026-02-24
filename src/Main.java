@@ -60,5 +60,28 @@ public class Main {
         for (int i = 0; i < outputArray2.length; i++) {
             System.out.print(outputArray2[i] + (i < outputArray2.length - 1 ? ", " : ""));
         }
+
+        // Задача 3
+        int[] inputArray3 = {3000, 5500, 10000, 2000, 5001};
+        boolean[] outputArray3 = new boolean[inputArray3.length];
+        for (int i = 0; i < inputArray3.length; i++) {
+            if (inputArray3[i] > 5000) {
+                outputArray3[i] = true;
+            } else {
+                outputArray3[i] = false;
+            }
+        }
+
+        System.out.print("InputArray3 (Бонусы): ");
+        for (int i = 0; i < inputArray3.length; i++) {
+            System.out.print(inputArray3[i] + (i < inputArray3.length - 1 ? ", " : ""));
+        }
+
+        System.out.println();
+
+        System.out.print("OutputArray3 (Выше 5000?): ");
+        for (int i = 0; i < outputArray3.length; i++) {
+            System.out.print(outputArray3[i] + (i < outputArray3.length - 1 ? ", " : ""));
+        }
     }
 }
